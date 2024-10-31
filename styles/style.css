@@ -23,6 +23,11 @@
   --shadow: 0px 8px 8px 0px #0000001a;
 }
 
+button,
+img {
+  cursor: pointer;
+}
+
 /* Global styles end */
 
 /* header start */
@@ -127,6 +132,128 @@ nav {
 
 /* intro end */
 
+/* *********************** */
+
+/* services start */
+
+#services {
+  padding-top: 120px;
+  width: 100%;
+}
+
+#services .services-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 820px;
+}
+
+#services .services-wrapper .mini-div {
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+}
+
+#services .services-wrapper .mini-div h2 {
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  text-align: center;
+}
+
+#services .services-wrapper .mini-div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: var(--black);
+}
+
+#services .services-wrapper .cards {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+  width: 100%;
+  min-height: 576px;
+}
+
+#services .services-wrapper .cards .card {
+  width: 29%;
+  min-height: 260px;
+  box-shadow: var(--shadow);
+  padding: 24px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#services .services-wrapper .cards .card img {
+  width: 169px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#services .services-wrapper .cards .card h4 {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+#services .services-wrapper .cards .card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--black);
+}
+
+#services .services-wrapper .offer {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 378px;
+}
+
+#services .services-wrapper .offer span button {
+  border-radius: 5px;
+  background-color: var(--blue);
+  width: 167px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--white);
+  border: none;
+  outline: none;
+}
+
+#services .services-wrapper .offer span:nth-child(2) {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  border-bottom: var(--blue) 2px solid;
+  margin-left: 10px;
+}
+
+/* services end */
+
 @media only screen and (max-width: 992px) {
   header {
     width: 100%;
@@ -142,9 +269,45 @@ nav {
     width: 100%;
     height: auto;
     margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   /* intro end */
+
+  /* *********************** */
+
+  /* services start */
+
+  #services .services-wrapper .cards .card {
+    width: 40%;
+  }
+
+  #services .services-wrapper .offer {
+    border: none;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    min-height: 70px;
+  }
+
+  #services .services-wrapper .offer span button {
+    border-radius: 5px;
+    background-color: var(--blue);
+    width: 167px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--white);
+    border: none;
+    outline: none;
+  }
+
+  /* services end */
 }
 
 @media only screen and (max-width: 768px) {
@@ -237,6 +400,9 @@ nav {
   #intro .intro-wrapper .right img {
     width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   /* intro end */
@@ -286,9 +452,101 @@ nav {
   #intro .intro-wrapper .right img {
     width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   /* intro end */
+
+  /* *********************** */
+
+  /* services start */
+
+  #services {
+    padding-top: 100px;
+    width: 100%;
+  }
+
+  #services .services-wrapper .mini-div h2 {
+    font-size: 22px;
+  }
+
+  #services .services-wrapper .mini-div p {
+    font-size: 14px;
+  }
+
+  #services .services-wrapper .cards .card {
+    width: 40%;
+    min-height: 230px;
+  }
+
+  #services .services-wrapper .cards .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  #services .services-wrapper .cards .card h4 {
+    font-size: 18px;
+  }
+
+  #services .services-wrapper .cards .card p {
+    font-size: 14px;
+  }
+
+  #services .services-wrapper .offer span button {
+    font-size: 14px;
+  }
+
+  #services .services-wrapper .offer span:nth-child(2) {
+    font-size: 14px;
+  }
+
+  /* services end */
+}
+
+@media only screen and (max-width: 480px) {
+  /* services start */
+
+  #services {
+    padding-top: 100px;
+    width: 100%;
+  }
+
+  #services .services-wrapper .mini-div h2 {
+    font-size: 22px;
+  }
+
+  #services .services-wrapper .mini-div p {
+    font-size: 14px;
+  }
+
+  #services .services-wrapper .cards .card {
+    width: 100%;
+  }
+
+  #services .services-wrapper .cards .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  #services .services-wrapper .cards .card h4 {
+    font-size: 20px;
+  }
+
+  #services .services-wrapper .cards .card p {
+    font-size: 16px;
+  }
+
+  #services .services-wrapper .offer span button {
+    font-size: 16px;
+  }
+
+  #services .services-wrapper .offer span:nth-child(2) {
+    font-size: 14px;
+  }
+
+  /* services end */
 }
 
 @media only screen and (max-width: 450px) {
@@ -349,4 +607,44 @@ nav {
   }
 
   /* intro end */
+
+  /* *************************** */
+
+  /* services start */
+
+  #services .services-wrapper .mini-div h2 {
+    font-size: 20px;
+  }
+
+  #services .services-wrapper .mini-div p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  #services .services-wrapper .cards .card {
+    width: 100%;
+  }
+
+  #services .services-wrapper .cards .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  #services .services-wrapper .cards .card h4 {
+    font-size: 16px;
+  }
+
+  #services .services-wrapper .cards .card p {
+    font-size: 12px;
+  }
+
+  #services .services-wrapper .offer span button {
+    font-size: 14px;
+  }
+
+  #services .services-wrapper .offer span:nth-child(2) {
+    font-size: 12px;
+  }
+
+  /* services end */
 }
